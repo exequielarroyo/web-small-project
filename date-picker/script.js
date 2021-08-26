@@ -36,13 +36,13 @@ function setDate(date) {
 nextMonthBtn.addEventListener("click", e => {
 	currentDate = addMonths(currentDate, 1);
 	const selectedDate = fromUnixTime(dateButton.dataset.selectedDate);
-	setupDates(selectedDate);
+	setupDatePicker(selectedDate);
 });
 
 prevMonthBtn.addEventListener("click", e => {
 	currentDate = subMonths(currentDate, 1);
 	const selectedDate = fromUnixTime(dateButton.dataset.selectedDate);
-	setupDates(selectedDate);
+	setupDatePicker(selectedDate);
 });
 
 function setupDatePicker(selectedDate) {
